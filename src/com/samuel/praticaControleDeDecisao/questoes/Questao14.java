@@ -18,7 +18,40 @@ public class Questao14 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
-
+		System.out.println("Digite sua nota do 1 semestre: ");
+		double nota1 = scan.nextDouble();
+		System.out.println("Digite sua nota do 2 semestre: ");
+		double nota2 = scan.nextDouble();
+		
+		double media = (nota1 + nota2)/2;
+		String conceito = null;
+		
+		if(media >= 9.0 && media <= 10) {
+			conceito = "A";
+		}else if(media >= 7.5 && media <= 9.0) {
+			conceito = "B";
+		}else if(media >= 6.0 && media <= 7.5) {
+			conceito = "C";
+		}else if(media >= 4.0 && media <= 6.0) {
+			conceito = "D";
+		}else if(media >= 0.0 && media <= 4.0) {
+			conceito = "E";
+		}
+		
+		System.out.println("BOLETIM");
+		System.out.println("------------------");
+		System.out.println("Primeiro Semestre : "+ nota1);
+		System.out.println("Segundo Semestre: "+ nota2);
+		System.out.println("Media do ano: "+ media +" - Conceito : "+conceito);
+		System.out.println("------------------");
+		
+		
+		
+		if(conceito.equals("A") || conceito.equals("B") || conceito.equals("C")) {
+			System.out.println("Resultado : APROVADO");
+		}else {
+			System.out.println("Resultado: REPROVADO");
+		}
 	}
 
 }
