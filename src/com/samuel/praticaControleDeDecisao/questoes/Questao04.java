@@ -22,7 +22,12 @@ public class Questao04 {
 			case "e":
 			case "i":
 			case "o":
-			case "u": 
+			case "u":
+			case "A":
+			case "E":
+			case "I":
+			case "O":
+			case "U":
 				System.out.println("Vogal"); 
 				break;
 			default: System.out.println("Consoante");
