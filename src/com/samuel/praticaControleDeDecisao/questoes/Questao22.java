@@ -8,7 +8,15 @@ public class Questao22 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
-
+		int valor = 0;
+		System.out.println("Digite um valor inteiro: ");
+		valor = scan.nextInt();
+		
+		if(valor % 2 == 0) {
+			System.out.println("Par");
+		}else {
+			System.out.println("Impar");
+		}
 	}
 
 }
