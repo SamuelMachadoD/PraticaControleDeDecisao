@@ -2,13 +2,21 @@ package com.samuel.praticaControleDeDecisao.questoes;
 
 import java.util.Scanner;
 
-/*18.Faça um Programa que peça uma data no formato dd/mm/aaaa e 
-determine se a mesma é uma data válida. */
+/*22.Faça um Programa que peça um número inteiro e determine se ele é 
+par ou impar. Dica: utilize o operador módulo (resto da divisão). */
 public class Questao18 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
-
+		int valor = 0;
+		System.out.println("Digite um valor inteiro: ");
+		valor = scan.nextInt();
+		
+		if(valor % 2 == 0) {
+			System.out.println("Par");
+		}else {
+			System.out.println("Impar");
+		}
 	}
 
 }
