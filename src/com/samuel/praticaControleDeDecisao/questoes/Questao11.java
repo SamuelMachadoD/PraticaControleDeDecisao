@@ -29,32 +29,18 @@ public class Questao11 {
 		double aumento;
 		double percentual;
 		
-		if(salarioAntigo <= 280) {
-			
-			percentual = 20;
-			aumento = salarioAntigo * (percentual/100);
-			salarioNovo = salarioAntigo + aumento;
-			
-		}else if(salarioAntigo > 280 && salarioAntigo <= 700) {
-			
-			percentual = 15;
-			aumento = salarioAntigo * (percentual/100);
-			salarioNovo = salarioAntigo + aumento;
-			
-		}else if(salarioAntigo > 700 && salarioAntigo <= 1500) {
-			
-			percentual = 10;
-			aumento = salarioAntigo * (percentual/100);
-			salarioNovo = salarioAntigo + aumento;
-			
+		if(salarioAntigo <= 280) {		
+			percentual = 20;		
+		} else if(salarioAntigo > 280 && salarioAntigo <= 700) {
+			percentual = 15;	
+		} else if(salarioAntigo > 700 && salarioAntigo <= 1500) {
+			percentual = 10;	
 		}else {
-			
 			percentual = 5;
-			aumento = salarioAntigo * (percentual/100);
-			salarioNovo = salarioAntigo + aumento;
-			
 		}
 		
+		aumento = salarioAntigo * (percentual/100);
+		salarioNovo = salarioAntigo + aumento;
 		System.out.println("Salario antes do reajuste: R$" + salarioAntigo);
 		System.out.println("O percentual aplicado foi de " + percentual + "%");
 		System.out.println("O aumento aplicado foi de R$" + aumento);
