@@ -24,13 +24,12 @@ public class Questao15 {
 		double lado3 = scan.nextDouble();
 		
 		if(lado1 + lado2 >= lado3 || lado3 + lado2 >= lado1 || lado3 + lado1 >= lado2){
-			System.out.println("Triangulo");
 			if(lado1 == lado2 && lado1 == lado3) {
-				System.out.println("Equilatero");
+				System.out.println("Triangulo Equilatero");
 			}else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-				System.out.println("Isoceles");
+				System.out.println("Triangulo Isoceles");
 			}else {
-				System.out.println("Escaleno");
+				System.out.println("Triangulo Escaleno");
 			}
 		}else {
 			System.out.println("Nao e um triangulo");

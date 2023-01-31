@@ -45,12 +45,11 @@ public class Questao14 {
 		System.out.println("Media do ano: "+ media +" - Conceito : "+conceito);
 		System.out.println("------------------");
 		
-		
-		
-		if(conceito.equals("A") || conceito.equals("B") || conceito.equals("C")) {
-			System.out.println("Resultado : APROVADO");
-		}else {
-			System.out.println("Resultado: REPROVADO");
+		switch(conceito) {
+			case "A":
+			case "B":
+			case "C": System.out.println("Resultado : APROVADO"); break;
+			default: System.out.println("Resultado: REPROVADO"); break;	
 		}
 	}
 
