@@ -10,9 +10,9 @@ public class Questao03 {
 		Scanner scan = new Scanner (System.in);
 
 		String letra = scan.next();
-		if(letra.equals("F") || letra.equals("f")) {
+		if(letra.equalsIgnoreCase("f")){
 			System.out.println("F - Feminino");
-		}else if(letra.equals("M") || letra.equals("m")) {
+		}else if(letra.equalsIgnoreCase("m")) {
 			System.out.println("M - Masculino");
 		}else {
 			System.out.println("Sexo inválido");
